@@ -1,0 +1,22 @@
+ # Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folder
+mealmingle/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore log files
+*.log
+
+# Ignore environment variables
+.env
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore Node Modules
+node_modules/
