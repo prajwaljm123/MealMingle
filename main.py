@@ -74,7 +74,7 @@ def extract_recipe_details(generated_text):
     print("Instructions Match:", instructions_match.group(1) if instructions_match else "None")  # Debugging
     if instructions_match:
         instructions = instructions_match.group(1).strip().split('\n')
-        recipe_details['instructions'] = '\n'.join([f"Step {i+1}: {step.strip()}" for i, step in enumerate(instructions)])
+        recipe_details['instructions'] = '\n'.join([f"{step.strip()}" for i, step in enumerate(instructions)])
 
     # Extract calories
     calories_match = re.search(calories_pattern, generated_text)

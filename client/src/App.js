@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom'; 
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom'; // Added useNavigate import
 import './styles.css';
 import RecipeForm from './RecipeForm';
 import RecipeDetails from './RecipeDetails';
+import HeroSection from './HeroSection'; // Import the HeroSection component
 
 function App() {
   const [recipeData, setRecipeData] = useState(null); // State to hold recipe data
@@ -24,6 +25,7 @@ function App() {
         </Routes>
         <FeaturesSection />
         <HowItWorks />
+        <Contact />
       </div>
     </Router>
   );
@@ -41,19 +43,6 @@ const Header = () => (
       <button className="get-started">Get Started</button>
     </nav>
   </header>
-);
-
-const HeroSection = () => (
-  <section className="hero">
-    <div className="hero-content">
-      <h1>Discover Recipes with MealMingle</h1>
-      <p>Input your available ingredients and let us suggest the perfect meal for you!</p>
-      <div className="cta-buttons">
-        <button className="cta">Generate Recipes</button>
-        <button className="cta">Learn More</button>
-      </div>
-    </div>
-  </section>
 );
 
 const RecipeFormSection = ({ setRecipeData }) => {
@@ -134,4 +123,13 @@ const HowItWorks = () => (
   </section>
 );
 
+const Contact=()=>(
+  <section className="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback,or need assistance,feel free to reach out!</p>
+    <p>Email : prajwaljm123@gmail.com / mamathadeeksha123@gmail.com</p>
+    <p>8088036094 / 9845568752</p>
+    <p>Follow Os on Social Media for the latest updates</p>
+  </section>
+);
 export default App;

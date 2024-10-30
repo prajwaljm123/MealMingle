@@ -174,7 +174,7 @@ nav ul li a {
 .input-field {
   padding: 10px;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #7a7575;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -228,6 +228,7 @@ h3 {
 
 .features h2 {
   margin-bottom: 20px;
+  font-size:3rem;
 }
 
 .features-list {
@@ -306,3 +307,123 @@ h3 {
   margin-top: 10px;
 }
 
+.contact{
+  padding : 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.contact h2{
+  margin-bottom:20px;
+  font-size: 2rem;
+  color: #333;
+}
+.contact p{
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color : #555;
+}
+.recipe-form {
+  margin: 20px 0;
+  text-align: center; /* Center the title */
+}
+.recipe-form h2{
+  font-size: 2rem;
+}
+
+.recipe-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the form elements */
+  padding: 20px; /* Padding inside the form */
+  background: white; /* Background color for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Shadow for the form container */
+}
+
+.ingredients-input {
+  margin: 10px 0; /* Margin for spacing */
+  padding: 10px; /* Padding inside the input */
+  width: 300px; /* Fixed width for the input */
+  border: 2px solid #ccc; /* Border for the input */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Font size for input text */
+  transition: transform 0.3s ease,border-color 0.3s ease;
+}
+.ingredients-input:focus{
+  transform: scale(1.2);
+  border-color: #ff5722;
+  outline:none;
+}
+
+.generate-button {
+  margin-top: 10px; /* Spacing above the button */
+  padding: 10px 20px; /* Padding for button */
+  background-color: #ff5722; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size for button text */
+}
+
+.generate-button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+  transform: translateY(-5px);
+}
+.recipe-form-section {
+  padding: 40px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Background color of the section */
+}
+
+.form-container {
+  background-color: white; /* Background color for the form container */
+  width: 500px;
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  padding: 20px; /* Inner spacing for the form */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), /* Light shadow */
+              0 8px 40px rgba(0, 0, 0, 0.1); /* Darker shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-container:hover {
+  transform: translateY(-5px); /* Slight lift on hover for interactivity */
+}
+.recipe-details {
+  max-width: 900px; /* Limit the width for readability */
+  margin: 20px auto; /* Center the content horizontally */
+  padding: 20px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Border around the recipe details */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for better contrast */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.loading {
+  text-align: center; /* Center the loading text */
+  font-size: 1.5rem; /* Larger font for loading message */
+  margin-top: 50px; /* Space above the loading message */
+}
+
+.centered-heading {
+  text-align: center; /* Center the headings */
+}
+
+.ingredients-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.ingredient-item {
+  text-align: left; /* Align ingredient text to the left */
+  margin: 5px 0; /* Spacing between ingredient items */
+}
+
+.instructions {
+  margin-top: 10px; /* Space above the instructions */
+  line-height: 1.6; /* Increase line height for readability */
+  text-align: left; /* Align instructions to the left */
+}
