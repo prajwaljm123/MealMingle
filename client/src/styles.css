@@ -8,6 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
+ 
 }
 
 /* Header Styling */
@@ -92,6 +93,11 @@ nav ul li a {
   height: 50vh;
   background-color: #fff;
   margin: 40px 0;
+  background-image: url('./middle-image.jpg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0; /* Remove default margin */
 }
 
 .form-container {
@@ -426,4 +432,85 @@ h3 {
   margin-top: 10px; /* Space above the instructions */
   line-height: 1.6; /* Increase line height for readability */
   text-align: left; /* Align instructions to the left */
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatbot-messages {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.message.user {
+  background-color: #e1f5fe;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #ffecb3;
+  align-self: flex-start;
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chatbot-input input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Fixed typo here */
+}
+
+.chatbot-input button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.chat-icon {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  z-index: 1000;
+  width: 80px; /* Increase the width */
+  height: 80px; /* Increase the height */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition for box shadow */
+  background-color: #fff; /* Optional: Add background color */
+  border-radius: 50%; /* Make the icon circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  display: flex; /* Center the content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Optional: Add a hover effect for better user experience */
+.chat-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a larger shadow on hover */
 }

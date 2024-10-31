@@ -4,13 +4,15 @@ import './styles.css';
 import RecipeForm from './RecipeForm';
 import RecipeDetails from './RecipeDetails';
 import HeroSection from './HeroSection'; // Import the HeroSection component
+import Chatbot from './Chatbot';
 
 function App() {
   const [recipeData, setRecipeData] = useState(null); // State to hold recipe data
-
+  
   return (
     <Router>
       <div className="App">
+        <Chatbot/>
         <Header />
         <HeroSection />
         <Routes>
