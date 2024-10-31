@@ -21,21 +21,23 @@ mealmingle/
 # Ignore Node Modules
 node_modules/
 # Ignore image files
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.svg
+client/src/video-unscreen.gif
+
+.png
+.jpg
+.jpeg
+.gif
+.bmp
+.tiff
+.svg
 
 # Ignore video files
-*.mp4
-*.mov
-*.avi
-*.mkv
+.mp4
+.mov
+.avi
+.mkv
 
 # Ignore other large files
-*.zip
-*.tar
-*.gz
+.zip
+.tar
+.gz
