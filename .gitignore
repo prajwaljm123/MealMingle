@@ -22,20 +22,6 @@ mealmingle/
 node_modules/
 
 # Ignore image files
-client/src/*.png
-client/src/*.jpg
-client/src/*.jpeg
-client/src/*.gif
-client/src/*.bmp
-client/src/*.tiff
-client/src/*.svg
-
-# Ignore video files
-client/src/*.mp4
-client/src/*.mov
-client/src/*.avi
-client/src/*.mkv
-
 # Ignore other large files
 *.zip
 *.tar
