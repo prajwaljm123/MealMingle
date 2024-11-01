@@ -1,4 +1,4 @@
- # Ignore Python cache files
+# Ignore Python cache files
 __pycache__/
 *.py[cod]
 
@@ -22,20 +22,6 @@ mealmingle/
 node_modules/
 
 # Ignore image files
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.svg
-
-# Ignore video files
-*.mp4
-*.mov
-*.avi
-*.mkv
-
 # Ignore other large files
 *.zip
 *.tar

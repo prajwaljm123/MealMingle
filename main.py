@@ -89,6 +89,7 @@ def generate_recipe_endpoint():
     data = request.json
     ingredients = data.get('ingredients', [])
     generated_recipe = generate_recipe(ingredients)  # Call your existing function
+    
     recipe_details = extract_recipe_details(generated_recipe)  # Extract details
     if recipe_details and recipe_details['recipe_name']:  # Ensure the recipe name is not None
         return jsonify(recipe_details), 200

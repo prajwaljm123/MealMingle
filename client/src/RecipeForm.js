@@ -17,7 +17,7 @@ function RecipeForm({ onGenerate }) {
             },
             body: JSON.stringify({ ingredients: ingredientsArray }),
         });
-
+        
         if (response.ok) {
             const recipeDetails = await response.json();
             console.log(recipeDetails); // Print recipe details to console for debugging
