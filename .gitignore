@@ -1,4 +1,4 @@
- # Ignore Python cache files
+# Ignore Python cache files
 __pycache__/
 *.py[cod]
 
@@ -20,24 +20,23 @@ mealmingle/
 
 # Ignore Node Modules
 node_modules/
-# Ignore image files
-client/src/video-unscreen.gif
 
-.png
-.jpg
-.jpeg
-.gif
-.bmp
-.tiff
-.svg
+# Ignore image files
+client/src/*.png
+client/src/*.jpg
+client/src/*.jpeg
+client/src/*.gif
+client/src/*.bmp
+client/src/*.tiff
+client/src/*.svg
 
 # Ignore video files
-.mp4
-.mov
-.avi
-.mkv
+client/src/*.mp4
+client/src/*.mov
+client/src/*.avi
+client/src/*.mkv
 
 # Ignore other large files
-.zip
-.tar
-.gz
+*.zip
+*.tar
+*.gz
