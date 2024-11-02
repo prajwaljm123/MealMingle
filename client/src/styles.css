@@ -436,7 +436,7 @@ h3 {
 
 .chatbot {
   position: fixed;
-  bottom: 20px;
+  bottom: 150px;
   right: 20px;
   width: 350px;
   background: #f9f9f9;
@@ -501,9 +501,8 @@ h3 {
   height: 80px; /* Increase the height */
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s; /* Add transition for box shadow */
-  background-color: #fff; /* Optional: Add background color */
-  border-radius: 50%; /* Make the icon circular */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  background-color: transparent; /* Optional: Add background color */
+  border-radius: 50%; /* Make the icon circular */ /* Add a shadow for depth */
   display: flex; /* Center the content */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */

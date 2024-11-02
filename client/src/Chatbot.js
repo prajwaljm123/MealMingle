@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './styles.css';
-import chatIconGif from './video-unscreen.gif'; // Make sure this path is correct
+import chatIconGif from './chatbot_icon.gif'; // Make sure this path is correct
 
 function Chatbot() {
     const [messages, setMessages] = useState([]);
@@ -68,7 +68,7 @@ function Chatbot() {
                     alt="Chat Icon" 
                     className="chat-icon" 
                     onClick={handleToggleChatbot} 
-                    style={{ cursor: 'pointer', width: '80px', height: '80px' }} // Adjust size as needed
+                    style={{ cursor: 'pointer', width: '120px', height: '120px' }} // Adjust size as needed
                 />
             )}
             {isChatbotOpen && ( // Conditionally render the chatbot
