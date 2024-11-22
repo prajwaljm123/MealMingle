@@ -41,6 +41,11 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #333;
+  font-size: 1.3rem;
+  
+}
+nav ul li a:hover{
+  transform: scale(2.5rem);
 }
 
 .get-started {
