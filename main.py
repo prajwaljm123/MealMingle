@@ -43,8 +43,8 @@ def generate_recipe(ingredients):
         return f"Error generating recipe: {str(e)}"
 
 def extract_recipe_details(generated_text):
-    # Updated regex patterns to remove look-behind and ensure fixed width where needed
-    name_pattern = r'^\s*##\s*(.*?)\s*\n'  # Match the recipe name after "##"
+    # Adjusted regex patterns to match the response format
+    name_pattern = r'\*\*Recipe Name:\*\*\s*(.*?)\s*(?:\n|$)'  # Match "**Recipe Name:** <name>"
     ingredients_pattern = r'\*\*Ingredients:\*\*\s*\n(.*?)\n\n'  # Match ingredients after "**Ingredients:**"
     instructions_pattern = r'\*\*Instructions:\*\*\s*\n(.*?)\n\n'  # Match instructions after "**Instructions:**"
     calories_pattern = r'\*\*Calories:\*\*\s*(.*?)\n'  # Match calories after "**Calories:**"
@@ -74,7 +74,7 @@ def extract_recipe_details(generated_text):
     print("Instructions Match:", instructions_match.group(1) if instructions_match else "None")  # Debugging
     if instructions_match:
         instructions = instructions_match.group(1).strip().split('\n')
-        recipe_details['instructions'] = '\n'.join([f"{step.strip()}" for i, step in enumerate(instructions)])
+        recipe_details['instructions'] = '\n'.join([f"{step.strip()}" for step in instructions])
 
     # Extract calories
     calories_match = re.search(calories_pattern, generated_text)
@@ -92,8 +92,10 @@ def generate_recipe_endpoint():
     
     recipe_details = extract_recipe_details(generated_recipe)  # Extract details
     if recipe_details and recipe_details['recipe_name']:  # Ensure the recipe name is not None
+        print("Response Json:",recipe_details)
         return jsonify(recipe_details), 200
     else:
+        print("Error in response: Failed to generate a valid recipe. ")
         return jsonify({'error': 'Failed to generate a valid recipe.'}), 400
 
 if __name__ == '__main__':
