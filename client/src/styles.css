@@ -441,6 +441,7 @@ h3 {
 
 .chatbot {
   position: fixed;
+  cursor: move;
   bottom: 150px;
   right: 20px;
   width: 350px;
@@ -466,12 +467,12 @@ h3 {
 }
 
 .message.user {
-  background-color: #e1f5fe;
+  background-color: #ff562269;
   align-self: flex-end;
 }
 
 .message.bot {
-  background-color: #ffecb3;
+  background-color: #ff5622ab;
   align-self: flex-start;
 }
 
